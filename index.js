@@ -7,6 +7,8 @@
  */
 function convertToCelsius(f) {
   // TODO
+  const c = (f - 32) * 5/9
+  return c
 }
 
 /**
@@ -24,11 +26,26 @@ function convertToCelsius(f) {
  */
 function describeTemperature(f) {
   // TODO
+  if (f < 32){
+    return "very cold"
+  }
+  else if (f < 64){
+    return "cold"
+  }
+  else if (f < 86){
+    return "warm"
+  }
+  else if (f < 100){
+    return "hot"
+  }
+  else if (f >= 100){
+    return "very hot"
+  }
 }
 
 /**
- * @param {number} limit
- * @returns {number} a random integer in the range [0, `limit`)
+ * @param {0, 1000} limit
+ * @returns {0, 1000} a random integer in the range [0, `limit`)
  */
 function getRandomInt(limit) {
   // TODO
