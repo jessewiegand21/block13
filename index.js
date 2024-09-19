@@ -44,11 +44,13 @@ function describeTemperature(f) {
 }
 
 /**
- * @param {0, 1000} limit
+ * @param {1000} limit
  * @returns {0, 1000} a random integer in the range [0, `limit`)
  */
 function getRandomInt(limit) {
   // TODO
+  return Math.floor(Math.random() * limit);
+
 }
 
 // -------------------- DO NOT CHANGE THE CODE BELOW ---------------------- //
